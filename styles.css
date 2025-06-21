@@ -1,0 +1,141 @@
+/* Background and layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom right, #ffd6e9, #ffe6f7);
+  color: navy;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  text-align: center;
+  padding: 50px 30px;
+  background-color: #fff0f9;
+  border: 2px solid #d291bc;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  color: navy;
+  font-size: 2.8rem;
+  font-family: 'Pacifico', cursive;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #ffb6c1;
+  color: navy;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffa6c4;
+}
+
+#message {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: navy;
+}
+
+/* Toggle message border box */
+.message-box {
+  border: 2px dashed navy;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fff5fb;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Floating hearts background */
+.heart-background::before {
+  content: "💖 💕 💗 💘 💓 💞 💝";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-size: 2.5rem;
+  animation: floatHearts 18s linear infinite;
+  opacity: 0.15;
+  z-index: 0;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+@keyframes floatHearts {
+  0% {
+    transform: translateY(100vh) translateX(0);
+  }
+  100% {
+    transform: translateY(-100vh) translateX(20px);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* Hearts burst container */
+#heartBurst {
+  position: relative;
+  height: 80px;
+  margin-top: 20px;
+}
+
+/* Individual heart animation */
+.heart {
+  position: absolute;
+  font-size: 2rem;
+  animation: floatUp 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(30px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80px) scale(1.4);
+    opacity: 0;
+  }
+}
