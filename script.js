@@ -34,9 +34,9 @@ function showMessage() {
         "I made this little surprise for you.\n" +
         "I just want to remind you of the person you are.\n" +
         "You're smart, kind, funny and special, especially to me.\n" +
-        "I never knew I'd start waking up in the morning and you'd be the first thing on my mind,\n" +
-        "I love the feeling and hope it lasts forever.\n" +
-        "This is just a small way of saying... you matter to me. A lot.\n" +
+        "I know we dont speak anymore but I just want you to know how much you mean to me.\n" +
+        "I hope God answers all your prayers and your dreams.\n" +
+        "Happy Birthday Bohlale.\n" +
         "— Daniel 🌟"
       );
     }, 2000);
