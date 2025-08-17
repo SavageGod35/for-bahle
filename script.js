@@ -3,7 +3,6 @@ let messageVisible = false;
 function showMessage() {
   const music = document.getElementById('bgMusic');
 
-  // Set volume and try to play music
   music.volume = 0.2;
   music.play().catch(error => {
     console.log("Autoplay blocked — will try again after user interaction.");
