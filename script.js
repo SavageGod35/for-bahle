@@ -1,4 +1,4 @@
-let messageVisible = false;
+let messageVisible = false.
 
 function showMessage() {
   const music = document.getElementById('bgMusic');
